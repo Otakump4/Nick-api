@@ -1,0 +1,24 @@
+{
+"name": "nickapi",
+"version": "1.0.0",
+"description": "api simples para gerar nicks bonitos ",
+"main": "index.js",
+"type": "module",
+"scripts": {
+"start": "NODE_ENV=production node sh start.sh",
+"dev": "NODE_ENV=development nodemon index.js",
+"termux": "NODE_ENV=production pm2 start ecosystem.config.js",
+"logs": "pm2 logs lucas-fonts",
+"optimize": "node --max-old-space-size=4096 server.js"
+},
+"author": "@lucas_mod_domina",
+"license": "MIT",
+"dependencies": {
+"chalk": "^5.4.1",
+"express": "^5.1.0",
+"morgan": "^1.10.0",
+"path": "^0.12.7",
+"url": "^0.11.4",
+"user-agent": "^1.0.4"
+}
+}

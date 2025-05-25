@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>LUCAS FONTS | Documentação da API</title>
+<link href="https://fonts.googleapis.com/css2?family=Russian+One&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<!-- Metatags para Redes Sociais -->
+<meta property="og:title" content="LUCAS FONTS | Gerador de Nicks">
+<meta property="og:description" content="Gere nicks únicos com 35+ estilos de fontes e decorações especiais">
+<meta property="og:image" content="https://zero-two.info/uploads/images/file-1748144240880-189600831.jpeg">
+<meta property="og:url" content="https://zero-two.online">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="shortcut icon" href="https://zero-two.info/uploads/images/file-1748144240880-189600831.jpeg">
+<audio id="backgroundAudio" hidden>
+<source src="https://zero-two.info/uploads/audios/file-1735272132613-487516482.mp3" type="audio/mpeg">
+Seu navegador não suporta o elemento de áudio.
+</audio>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg cyber-nav">
+<div class="container">
+<a class="navbar-brand nav-brand neon-glow" href="index.html">
+<i class="fas fa-dragon me-2"></i>LUCAS FONTS
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item">
+<a class="nav-link text-white" href="api.html"><i class="fas fa-code me-2"></i>API</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<main class="cyber-main">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-10">
+<h1 class="main-title text-center neon-glow mb-5">
+<i class="fas fa-code me-3"></i>Documentação da API
+</h1>
+<div class="cyber-card">
+<h3 class="text-neon"><i class="fas fa-link me-2"></i>Endpoints Disponíveis</h3>
+<div class="api-endpoint mt-4">
+<div class="d-flex align-items-center mb-3">
+<span class="badge bg-neon me-2">GET</span>
+<code class="text-neon">/nicks/generate?nick=string</code>
+</div>
+<p class="text-muted">Gera todas as variações de fonte para o nickname fornecido</p>
+<h5 class="text-neon mt-4">Exemplo de Requisição:</h5>
+<pre class="bg-dark p-3">fetch('/nicks/generate?nick=Player')
+.then(response => response.json())
+.then(data => console.log(data));</pre>
+<h5 class="text-neon mt-4">Exemplo de Resposta:</h5>
+<pre class="bg-dark p-3">{
+"original": "Player",
+"fonts": [
+{
+"font": "boldSerif",
+"nick": "𝐏𝐥𝐚𝐲𝐞𝐫"
+},
+...
+]
+}</pre>
+</div>
+<div class="api-endpoint mt-5">
+<div class="d-flex align-items-center mb-3">
+<span class="badge bg-neon me-2">GET</span>
+<code class="text-neon">/nicks/decorated?nick=string</code>
+</div>
+<p class="text-muted">Retorna nicks com decorações especiais</p>
+<h5 class="text-neon mt-4">Exemplo de Requisição:</h5>
+<pre class="bg-dark p-3">fetch('/nicks/decorated?nick=Player')
+.then(response => response.json())
+.then(data => console.log(data));</pre>
+<h5 class="text-neon mt-4">Exemplo de Resposta:</h5>
+<pre class="bg-dark p-3">{
+"original": "Player",
+"variants": [
+"꧁༺Player༻꧂",
+"𖧄 𝐏𝐥𝐚𝐲𝐞𝐫 𖧄",
+...
+]
+}</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="cyber-footer" aria-label="Rodapé do site">
+<div class="container">
+<div class="row g-4">
+<div class="col-md-6">
+<section aria-labelledby="contactHeading">
+<h3 id="contactHeading" class="footer-title neon-glow">Contato</h3>
+<ul class="list-unstyled">
+<li>
+<i class="fas fa-envelope me-2"></i>
+<a href="mailto:lucasmoddomina@gmail.com" class="text-white">
+lucasmoddomina@gmail.com
+</a>
+</li>
+<li class="mt-3">
+<div class="social-links d-flex justify-content-center">
+<a href="https://wa.me/559491569380?text=vim%20pelo%20site%20de%20gerar%20nick%20seu" class="text-white mx-2" 
+aria-label="WhatsApp"
+data-bs-toggle="tooltip" 
+title="WhatsApp">
+<i class="fab fa-whatsapp"></i>
+</a>
+<a href="https://t.me/LUCAS_MOD_DOMINA" class="text-white mx-2" 
+aria-label="Telegram"
+data-bs-toggle="tooltip" 
+title="Telegram">
+<i class="fab fa-telegram"></i>
+</a>
+<a href="https://youtube.com/@Otaku.mp4" class="text-white mx-2" 
+aria-label="YouTube"
+data-bs-toggle="tooltip" 
+title="YouTube">
+<i class="fab fa-youtube"></i>
+</a>
+<a href="https://github.com/Otakump4" class="text-white mx-2" 
+aria-label="GitHub"
+data-bs-toggle="tooltip" 
+title="GitHub">
+<i class="fab fa-github"></i>
+</a>
+<a href="https://instagram.com/@lucas_mod_domina" class="text-white mx-2" 
+aria-label="Instagram"
+data-bs-toggle="tooltip" 
+title="Instagram">
+<i class="fab fa-instagram"></i>
+</a>
+</div>
+</li>
+</ul>
+</section>
+</div>
+<div class="col-md-6">
+<section aria-labelledby="legalHeading">
+<h3 id="legalHeading" class="footer-title neon-glow">Legal</h3>
+<ul class="list-unstyled">
+<li>
+<a href="terms.html" class="text-white" 
+aria-label="Termos de Uso">
+<i class="fas fa-gavel me-2"></i>Termos de Uso
+</a>
+</li>
+<li>
+<a href="privacy.html" class="text-white" 
+aria-label="Política de Privacidade">
+<i class="fas fa-lock me-2"></i>Política de Privacidade
+</a>
+</li>
+</ul>
+</section>
+</div>
+</div>
+<div class="text-center mt-5">
+<small class="text-muted">
+© 2025 LUCAS FONTS | @lucas_mod_domina - Todos os direitos reservados
+<span class="d-block mt-1">v2.0.0</span>
+</small>
+</div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>
