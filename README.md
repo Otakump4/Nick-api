@@ -53,6 +53,8 @@ O **Nick-API** é um serviço leve em **Node.js + Express** que gera variações
 2. Entre na pasta do projeto e instale dependências:  
    ```sh
    cd Nick-api
+   ```
+   ```sh
    npm install
    ```
 3. Inicie a API:  
@@ -136,7 +138,7 @@ GET /nicks/decorated?nick=<seu_nick>
 ## 🧑‍💻 Autor
 
 <p align="center">
-  <img src="https://avatars.githubusercontent.com/u/Otakump4" width="80" height="80" alt="Foto do autor" />
+  <img src="https://zero-two.info/uploads/images/file-1748107531316-459394158.jpeg" width="80" height="80" alt="Foto do autor" />
   <br />
   <strong>@lucas_mod_domina</strong>  
   <a href="https://wa.me/559491569380">Contate-me no WhatsApp</a>
